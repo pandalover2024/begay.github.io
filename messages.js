@@ -41,7 +41,7 @@ function showFullChat() {
     fullChat.classList.add('full-chat');
     fullChat.innerHTML = `
         <button id="closeChat">❌ Exit</button>
-        <div id="chatMessages"><div><strong>Mahmoud B. (Owner):</strong> Custom message</div></div>
+        <div id="chatMessages"><div><strong>Mahmoud B. (Owner):</strong> Welcome to BeGay! This is a gay dating app made by me. </div></div>
         <div class="chat-input-blocked">
             <div class="chat-input">
                 <input type="text" disabled placeholder="Type your message here...">
