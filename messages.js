@@ -29,7 +29,7 @@ function displayMessages() {
     messageList.innerHTML = ''; // Clear the existing messages
     const messageItem = document.createElement('div');
     messageItem.classList.add('message-item');
-    messageItem.innerHTML = '<strong>Mahmoud B. (Owner):</strong> Custom message';
+    messageItem.innerHTML = '<strong>Mahmoud B. (Owner):</strong> Welcome to my gay dating app!';
     messageItem.addEventListener('click', () => {
         showFullChat();
     });
