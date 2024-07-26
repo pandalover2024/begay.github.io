@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form id="signUpForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Username" required>
+
+            <label for="fName">First Name:</label>
+            <input type="text" id="fName" placeholder="First Name" required>
+
+            <label for="lName">Last Name:</label>
+            <input type="text" id="lName" placeholder="Last Name" required>
+
+            <label for="rEmail">Email:</label>
+            <input type="email" id="rEmail" placeholder="Email" required>
+
+            <label for="rPassword">Password:</label>
+            <input type="password" id="rPassword" placeholder="Password" required>
+
+            <label for="hobbies">Hobbies:</label>
+            <select id="hobbies" multiple>
+                <option value="🎨 Art">🎨 Art</option>
+                <option value="🎸 Music">🎸 Music</option>
+                <option value="⚽ Sports">⚽ Sports</option>
+                <option value="📚 Reading">📚 Reading</option>
+                <option value="🖥️ Gaming">🖥️ Gaming</option>
+            </select>
+
+            <label for="interests">Interests:</label>
+            <select id="interests" multiple>
+                <option value="🌍 Travel">🌍 Travel</option>
+                <option value="🍴 Food">🍴 Food</option>
+                <option value="📸 Photography">📸 Photography</option>
+                <option value="🎬 Movies">🎬 Movies</option>
+                <option value="🛠️ DIY">🛠️ DIY</option>
+            </select>
+
+            <label for="sexuality">Sexuality:</label>
+            <select id="sexuality" required>
+                <option value="bisexual">Bisexual</option>
+                <option value="gay">Gay</option>
+                <option value="lesbian">Lesbian</option>
+            </select>
+
+            <label for="profilePic">Profile Picture:</label>
+            <input type="file" id="profilePic" accept="image/*">
+
+            <button type="submit" id="submitSignUp">Sign Up</button>
+            <p id="signUpMessage" class="messageDiv"></p>
+        </form>
+        <a id="signInButton" href="index.html">Sign In</a>
+    </div>
+    <script type="module" src="signup.js"></script>
+</body>
+</html>

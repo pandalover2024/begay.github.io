@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="./messages.js"></script>
+</head>
+<body id="messages-page">
+    <header>
+        <button id="backToHome">⬅ Home</button>
+        <h1>Messages</h1>
+    </header>
+    <div id="messageList" class="message-list">
+        <!-- Message list will be populated here -->
+    </div>
+    <div id="fullChat" class="full-chat" style="display: none;">
+        <button id="closeChat">❌ Exit</button>
+        <div id="chatMessages"></div>
+        <div class="chat-input-blocked">
+            <div class="chat-input">
+                <input type="text" disabled placeholder="Type your message here...">
+                <button disabled>Send</button>
+            </div>
+            <div class="blocked-message">You can't message this user</div>
+        </div>
+    </div>
+</body>
+</html>

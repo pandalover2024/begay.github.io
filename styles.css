@@ -1,0 +1,384 @@
+/* General Styles */
+body {
+    padding: 0;
+    margin: 0;
+    background: #e2e2e2;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Logo Styles */
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Georgia', serif;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-bar input:focus {
+    border-color: #007bff;
+}
+
+/* Button Container Styles */
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+/* Individual Button Styles */
+.button-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Logout Button Styles */
+#logout {
+    background-color: #dc3545;
+    padding: 10px 20px;
+}
+
+#logout:hover {
+    background-color: #c82333;
+}
+
+/* Container Styles for Index Page */
+#signup, #signIn {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Form Title Styles */
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Input Group Styles */
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: #888;
+}
+
+.input-group input {
+    width: calc(100% - 40px);
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.input-group label {
+    position: absolute;
+    top: -20px;
+    left: 12px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Button Styles */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Links Styles */
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.links p {
+    margin: 0;
+}
+
+.links button {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.links button:hover {
+    text-decoration: underline;
+}
+
+/* Message Div Styles */
+.messageDiv {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f8d7da;
+    color: #721c24;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Homepage Container Styles */
+#homepage {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Styles */
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Exit Button Styles */
+#exitButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#exitButton:hover {
+    background-color: #0056b3;
+}
+
+/* Messages Container Styles */
+.messages-container {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Unread Count Styles */
+.unread-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    position: relative;
+    top: -10px;
+    right: 10px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Message List Styles */
+.message-list {
+    padding: 10px;
+}
+
+.message-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/* Full Chat Styles */
+.full-chat {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.full-chat #closeChat {
+    align-self: flex-end;
+    margin: 10px;
+}
+
+#chatMessages {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.chat-input-blocked {
+    position: relative;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.blocked-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .search-bar {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .search-bar input {
+        width: auto;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    #signup, #signIn {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .form-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .button-container button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}

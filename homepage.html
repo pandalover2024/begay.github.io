@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="./homepage.js"></script>
+</head>
+<body id="homepage">
+    <header>
+        <div class="logo">BeGay</div>
+        <div class="search-bar">
+            <input type="text" placeholder="🔍 Search">
+        </div>
+        <div class="button-container">
+            <button>🔔 Notifications</button>
+            <button id="messagesButton">💬 Messages <span id="unreadCount" class="unread-count">1</span></button>
+            <button>👤 Profile</button>
+            <button id="logout">Logout</button>
+        </div>
+    </header>
+    <div class="video-list" id="videoList"></div>
+    
+    <!-- Messages Modal -->
+    <div id="messagesModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Messages</h2>
+            <div id="messageList" class="message-list"></div>
+        </div>
+    </div>
+</body>
+</html>

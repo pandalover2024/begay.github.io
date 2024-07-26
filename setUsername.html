@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Username</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="setUsername.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Set Your Username</h1>
+        <form id="setUsernameForm">
+            <div id="setUsernameMessage" class="messageDiv" style="display:none;"></div>
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
+            <button type="submit">Save Username</button>
+        </form>
+        <button onclick="location.href='index.html'">Back to Home</button>
+    </div>
+</body>
+</html>
