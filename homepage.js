@@ -64,7 +64,7 @@ async function displayMessages() {
 
     const messageItem = document.createElement('div');
     messageItem.classList.add('message-item');
-    messageItem.innerHTML = '<strong>Mahmoud B. (Owner):</strong> Custom message';
+    messageItem.innerHTML = '<strong>Mahmoud B. (Owner):</strong> You have a new message!';
     messageItem.addEventListener('click', () => {
         showFullChat();
     });
@@ -76,7 +76,7 @@ function showFullChat() {
     fullChat.classList.add('full-chat');
     fullChat.innerHTML = `
         <button id="closeChat">❌ Exit</button>
-        <div id="chatMessages"><div><strong>Mahmoud B. (Owner):</strong> </div></div>
+        <div id="chatMessages"><div><strong>Mahmoud B. (Owner):  Welcome to BeGay! This is a gay dating app made by me. You made it! </strong> </div></div>
         <div class="chat-input-blocked">
             <div class="chat-input">
                 <input type="text" disabled placeholder="Type your message here...">
